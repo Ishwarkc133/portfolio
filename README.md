@@ -5,7 +5,7 @@ A modern, production-ready portfolio website built with Next.js 14, TypeScript, 
 ## Features
 
 - 🎨 **Modern Design** - Clean, responsive design with dark/light mode
-- ⚡ **Performance** - Static export ready, optimized for Lighthouse 100/100
+- ⚡ **Performance** - Optimized Next.js production build
 - 📧 **Contact Form** - Working contact form with Resend integration
 - 🎭 **Animations** - Smooth animations with Framer Motion
 - 🔍 **SEO** - Full Open Graph, Twitter Cards, JSON-LD structured data
@@ -118,18 +118,13 @@ Customize colors in `tailwind.config.ts` and CSS variables in `src/app/globals.c
 
 ### Vercel (Recommended)
 
-1. Push to GitHub
-2. Import project in Vercel
-3. Add environment variables
-4. Deploy
+1. Import `https://github.com/Ishwarkc133/portfolio` as a new Vercel project.
+2. Keep the detected Next.js framework and default build settings.
+3. Add `RESEND_API_KEY`, `CONTACT_EMAIL`, `FROM_EMAIL`, and `NEXT_PUBLIC_SITE_URL` in the Vercel project environment variables.
+4. Set `FROM_EMAIL` to an address verified with Resend and `NEXT_PUBLIC_SITE_URL` to the production site URL.
+5. Deploy. Vercel will automatically build and deploy later pushes to `main`.
 
-The `next.config.mjs` is configured for static export (`output: 'export'`), making it compatible with any static hosting.
-
-### Other Platforms
-
-- **Netlify**: Connect GitHub repo, build command: `npm run build`, publish directory: `out`
-- **Cloudflare Pages**: Connect GitHub repo, build command: `npm run build`, output directory: `out`
-- **GitHub Pages**: Use GitHub Actions to build and deploy to `gh-pages` branch
+The project uses a Next.js API route for the contact form, so it requires a Next.js-compatible host rather than a static-only export host.
 
 ## Scripts
 
