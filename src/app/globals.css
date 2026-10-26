@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 24% 98%;
+    --foreground: 222 32% 13%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 32% 13%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 32% 13%;
+    --primary: 168 63% 32%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 168 28% 94%;
+    --secondary-foreground: 168 42% 22%;
+    --muted: 210 20% 95%;
+    --muted-foreground: 215 15% 43%;
+    --accent: 168 28% 94%;
+    --accent-foreground: 168 42% 22%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 216 20% 88%;
+    --input: 216 20% 88%;
+    --ring: 168 63% 32%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 225 25% 4.7%;
+    --foreground: 210 20% 98%;
+    --card: 225 22% 9%;
+    --card-foreground: 210 20% 98%;
+    --popover: 225 22% 8%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 158 65% 52%;
+    --primary-foreground: 225 25% 5%;
+    --secondary: 222 22% 10%;
+    --secondary-foreground: 210 20% 92%;
+    --muted: 222 20% 12%;
+    --muted-foreground: 215 16% 72%;
+    --accent: 222 22% 13%;
+    --accent-foreground: 210 20% 96%;
+    --destructive: 0 62.8% 38%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 215 28% 17%;
+    --input: 215 28% 17%;
+    --ring: 158 65% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    text-rendering: optimizeLegibility;
+  }
+  .dark body {
+    background-image:
+      radial-gradient(ellipse at 50% -20%, hsl(var(--primary) / 0.07), transparent 38%),
+      linear-gradient(180deg, hsl(var(--background)), hsl(225 25% 4%));
+  }
+  html {
+    overflow-x: clip;
+    scroll-behavior: smooth;
+  }
+  section[id] {
+    scroll-margin-top: 5rem;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animate-gradient {
+    background-size: 300% 300%;
+    animation: gradient-shift 8s ease infinite;
+  }
+
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer components {
+  .prose {
+    @apply text-muted-foreground;
+  }
+  .prose h1 { @apply text-3xl font-bold text-foreground mt-8 mb-4; }
+  .prose h2 { @apply text-2xl font-semibold text-foreground mt-8 mb-3; }
+  .prose h3 { @apply text-xl font-semibold text-foreground mt-6 mb-2; }
+  .prose p { @apply leading-7 mt-4; }
+  .prose a { @apply text-primary underline underline-offset-2 hover:no-underline; }
+  .prose ul { @apply list-disc pl-6 mt-2; }
+  .prose ol { @apply list-decimal pl-6 mt-2; }
+  .prose li { @apply mt-2; }
+  .prose blockquote { @apply border-l-4 border-primary pl-4 italic my-4; }
+  .prose code { @apply bg-muted px-1.5 py-0.5 rounded font-mono text-sm; }
+  .prose pre { @apply bg-muted p-4 rounded-lg overflow-x-auto; }
+  .prose pre code { @apply bg-transparent p-0; }
+  .prose img { @apply rounded-lg my-6; }
+  .prose table { @apply w-full text-sm my-6; }
+  .prose th { @apply p-3 text-left font-medium border-b; }
+  .prose td { @apply p-3 border-b; }
+  .portfolio-card {
+    @apply rounded-2xl border border-border/80 bg-card/75 shadow-sm backdrop-blur-xl transition-all duration-300;
+  }
+  .portfolio-card:hover {
+    @apply -translate-y-1 border-primary/40 shadow-xl shadow-primary/[0.06];
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus visible styles for accessibility */
+:focus-visible {
+  @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+}
+
+/* Selection styles */
+::selection {
+  @apply bg-primary/20 text-primary-foreground;
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}

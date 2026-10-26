@@ -1,0 +1,83 @@
+ISHWAR KC
+Data QA Engineer
+Kathmandu, Nepal | ishwarkc133@gmail.com
+GitHub: github.com/ishwarkc | LinkedIn: linkedin.com/in/ishwar-kc-6a3681245
+
+PROFESSIONAL SUMMARY
+Data QA Engineer with 3+ years of experience specializing in healthcare data validation, ETL testing, SQL-based quality assurance, and automated data quality frameworks at Cedar Gate Technologies. Expertise in US healthcare data validation, CMS code sets, and cloud data platforms.
+
+PROFESSIONAL EXPERIENCE
+
+Data QA Engineer
+Cedar Gate Technologies | Sanepa, Lalitpur, Nepal
+Aug 2025 – Present
+• Design and execute comprehensive ETL test scenarios in Zephyr for US healthcare claims data processing pipelines
+• Perform source-to-target data validation across Redshift, HIVE, and AWS S3 with 99.9% accuracy
+• Work extensively with CMS code sets: ICD-10, CPT-4, HCPCS, NDC, NPI for claims validation
+• Developed automated validation frameworks using Python (Pandas, Great Expectations) and SQL
+• Mentor 3+ junior QA engineers on data validation best practices and tooling
+• Improved scrub workflow efficiency by 40% through automation and process optimization
+• Collaborate with data engineering team on schema design, data modeling, and pipeline architecture
+• Maintain Root Cause Analysis (RCA) documentation and review mapping specifications
+• Ensure HIPAA compliance across all data processing pipelines
+Technologies: Python, SQL, AWS Redshift, Apache HIVE, AWS S3, Pandas, Great Expectations, Zephyr, Jira, Git
+
+Associate Data QA Engineer
+Cedar Gate Technologies | Sanepa, Lalitpur, Nepal
+Apr 2024 – Aug 2025
+• Assisted in ETL testing for healthcare data warehouse migration project
+• Wrote complex SQL queries for data reconciliation between source and target systems
+• Learned and applied CMS coding systems (ICD-10, CPT-4, HCPCS) for claims data validation
+• Participated in agile ceremonies and contributed to test plan documentation
+• Automated repetitive validation checks using Python scripts and Excel macros
+• Collaborated with cross-functional teams to translate business requirements into testable solutions
+Technologies: SQL, Python, AWS Redshift, PostgreSQL, Excel, Zephyr, Jira, Agile
+
+Data QA Intern
+Cedar Gate Technologies | Sanepa, Lalitpur, Nepal
+Apr 2024 – Aug 2024
+• Supported ETL testing for healthcare data warehouse migration project
+• Wrote SQL queries for data reconciliation between source and target systems
+• Learned CMS coding systems (ICD-10, CPT-4, HCPCS) for claims data validation
+• Participated in agile ceremonies and contributed to test plan documentation
+• Automated repetitive validation checks using Python scripts
+Technologies: SQL, Python, AWS Redshift, PostgreSQL, Excel, Jira
+
+TECHNICAL SKILLS
+
+Data Analysis
+Redshift, HIVE, PostgreSQL, Excel, Data Extraction, Data Cleaning, Data Transformation, Data Aggregation
+
+US Healthcare Domain
+ICD-10, CPT-4, HCPCS, NDC, NPI, HIPAA Compliance, Claims Data Pipelines, Clinical Data Pipelines
+
+Cloud & Big Data
+AWS S3, AWS Redshift, Hadoop, Large Healthcare Datasets
+
+Programming & Automation
+Python, SQL, Pandas, Scripting, Validation Automation, File Processing, Reporting
+
+QA & ETL Testing
+ETL Test Design, Zephyr, Root Cause Analysis, Data Validation, Source-to-Target Verification, Test Scenarios
+
+Collaboration
+Agile/Scrum, Cross-functional Teams, Mentoring, Requirements Analysis
+
+EDUCATION
+
+B.Sc. Computer Science
+Kathmandu University | CGPA 3.83
+
+CERTIFICATIONS
+• IBM Data Science Professional Certificate
+• Google Data Analytics Certificate
+• SQL for Data Science
+• Python for Data Analysis
+
+ACHIEVEMENTS
+• Hult Prize 2023 Winner
+• Deep Learning for Natural Disaster Detection from Tweets - Springer LNNS 2024 Publication
+• Data Quality Dashboard - Internal tool for real-time ETL pipeline monitoring
+
+LANGUAGES
+English (Fluent), Nepali (Native)

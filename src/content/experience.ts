@@ -1,0 +1,57 @@
+import type { Experience } from '@/types';
+
+export const experiences: Experience[] = [
+  {
+    id: '1',
+    company: 'Cedar Gate Technologies',
+    role: 'Data QA Engineer',
+    period: 'Aug 2025 — Present',
+    location: 'Sanepa, Lalitpur, Nepal',
+    description: [
+      'Design and execute comprehensive ETL test scenarios in Zephyr for US healthcare claims data processing pipelines',
+      'Perform source-to-target data validation across Redshift, HIVE, and AWS S3 with 99.9% accuracy',
+      'Work extensively with CMS code sets: ICD-10, CPT-4, HCPCS, NDC, NPI for claims validation',
+      'Developed automated validation frameworks using Python (Pandas, Great Expectations) and SQL',
+      'Mentor 3+ junior QA engineers on data validation best practices and tooling',
+      'Improved scrub workflow efficiency by 40% through automation and process optimization',
+      'Collaborate with data engineering team on schema design, data modeling, and pipeline architecture',
+      'Maintain Root Cause Analysis (RCA) documentation and review mapping specifications',
+      'Ensure HIPAA compliance across all data processing pipelines',
+    ],
+    technologies: ['Python', 'SQL', 'AWS Redshift', 'Apache HIVE', 'AWS S3', 'Pandas', 'Great Expectations', 'Zephyr', 'Jira', 'Git'],
+    current: true,
+  },
+  {
+    id: '2',
+    company: 'Cedar Gate Technologies',
+    role: 'Associate Data QA Engineer',
+    period: 'Apr 2024 — Aug 2025',
+    location: 'Sanepa, Lalitpur, Nepal',
+    description: [
+      'Assisted in ETL testing for healthcare data warehouse migration project',
+      'Wrote complex SQL queries for data reconciliation between source and target systems',
+      'Learned and applied CMS coding systems (ICD-10, CPT-4, HCPCS) for claims data validation',
+      'Participated in agile ceremonies and contributed to test plan documentation',
+      'Automated repetitive validation checks using Python scripts and Excel macros',
+      'Collaborated with cross-functional teams to translate business requirements into testable solutions',
+    ],
+    technologies: ['SQL', 'Python', 'AWS Redshift', 'PostgreSQL', 'Excel', 'Zephyr', 'Jira', 'Agile'],
+    current: false,
+  },
+  {
+    id: '3',
+    company: 'Cedar Gate Technologies',
+    role: 'Data QA Intern',
+    period: 'Apr 2024 — Aug 2024',
+    location: 'Sanepa, Lalitpur, Nepal',
+    description: [
+      'Supported ETL testing for healthcare data warehouse migration project',
+      'Wrote SQL queries for data reconciliation between source and target systems',
+      'Learned CMS coding systems (ICD-10, CPT-4, HCPCS) for claims data validation',
+      'Participated in agile ceremonies and contributed to test plan documentation',
+      'Automated repetitive validation checks using Python scripts',
+    ],
+    technologies: ['SQL', 'Python', 'AWS Redshift', 'PostgreSQL', 'Excel', 'Jira'],
+    current: false,
+  },
+];
